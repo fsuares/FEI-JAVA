@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="LAB1/ex1/src/lab1/pkg22/pkg02/pkg2022"/>
+	<classpathentry kind="src" path="LAB1/ex2/src/main/java"/>
+	<classpathentry kind="src" path="LAB1/ex3/src/main/java"/>
+	<classpathentry kind="src" path="LAB1/ex4/src/main/java"/>
+	<classpathentry kind="src" path="LAB1/ex5/src/main/java"/>
+	<classpathentry kind="src" path="LAB1/ex6/src/main/java"/>
+	<classpathentry kind="src" path="LAB2/ex1/src"/>
+	<classpathentry kind="src" path="LAB2/ex2/src"/>
+	<classpathentry kind="output" path="LAB1/ex1/build/classes"/>
+</classpath>

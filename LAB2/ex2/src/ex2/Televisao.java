@@ -5,33 +5,33 @@ public class Televisao {
     private String modelo;
     private float preco, tamanho;
     private int volume = 1, canal = 1;
-    private boolean ligada, moreless;
+    private boolean ligada;
 
-    private String getModelo() {
+    public String getModelo() {
         return this.modelo;
     }
 
-    private void setModelo(String modelo) {
+    public void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
-    private float getPreco() {
+    public float getPreco() {
         return this.preco;
     }
 
-    private void setPreco(int preco) {
-        this.modelo = modelo;
+    public void setPreco(float preco) {
+        this.preco = preco;
     }
 
-    private float getTamanho() {
+    public float getTamanho() {
         return this.tamanho;
     }
 
-    private void setTamanho(float tamanho) {
+    public void setTamanho(float tamanho) {
         this.tamanho = tamanho;
     }
 
-    private int getVolume() {
+    public int getVolume() {
         return this.volume;
     }
 
@@ -39,31 +39,33 @@ public class Televisao {
         this.volume = volume;
     }
 
-    private int getCanal() {
+    public int getCanal() {
         return this.canal;
     }
 
-    private void setCanal(int canal) {
+    public void setCanal(int canal) {
         this.canal = canal;
     }
 
-    private boolean getLigada() {
-        return this.ligada;
+    public String getLigada() {
+        if (ligada == true) {
+            return "Ligada";
+        } else {
+            return "Desligada";
+        }
     }
 
-    private void setLigada(boolean ligada) {
+    public void setLigada(boolean ligada) {
         this.ligada = ligada;
     }
 
-    public int alteraVolume(boolean moreless) {
-        if (moreless = true) {
+    public int alteraVolume(String moreless) {
+        if (moreless == "+") {
             volume++;
             if (volume > 100) {
                 this.volume = 1;
             }
-        } 
-        
-        else if (moreless = false) {
+        } else if (moreless == "-") {
             volume--;
             if (volume < 0) {
                 this.volume = 99;
@@ -71,31 +73,32 @@ public class Televisao {
         }
         return this.volume;
     }
-    
-    public int alteraCanal(boolean moreless) {
-        if (moreless = true) {
+
+    public int alteraCanal(String moreless) {
+        if (moreless == "+") {
             canal++;
             if (canal > 999) {
                 this.canal = 1;
             }
-        } 
-        
-        else if (moreless = false) {
+        } else if (moreless == "-") {
             canal--;
-            if (canal < 0) {
+            if (canal < 1) {
                 this.canal = 999;
             }
         }
-        return this.volume;
+        return this.canal;
         
-        public boolean desligatTv(){
-            if (this.ligada = false){
-                this.ligada = true;
-            }
-            else if (this.ligada = true){
-                this.ligada = false;
-            }
+
+    
+
+    public boolean desligaTv() {
+        if (this.ligada = false) {
+            this.ligada = true;
+        } else {
+            this.ligada = false;
         }
+        return this.ligada;
     }
+}
 
 }

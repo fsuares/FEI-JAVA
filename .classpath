@@ -9,5 +9,6 @@
 	<classpathentry kind="src" path="LAB1/ex6/src/main/java"/>
 	<classpathentry kind="src" path="LAB2/ex1/src"/>
 	<classpathentry kind="src" path="LAB2/ex2/src"/>
+	<classpathentry kind="src" path="LAB5/ex1/src/ex1"/>
 	<classpathentry kind="output" path="LAB1/ex1/build/classes"/>
 </classpath>

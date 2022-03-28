@@ -1,3 +1,7 @@
+
+
+
+
 package ex2;
 
 public class Televisao {
@@ -5,7 +9,7 @@ public class Televisao {
     private String modelo;
     private float preco, tamanho;
     private int volume = 1, canal = 1;
-    private boolean ligada;
+    private boolean ligada = false;
 
     public String getModelo() {
         return this.modelo;
@@ -35,7 +39,7 @@ public class Televisao {
         return this.volume;
     }
 
-    private void setVolume(int volume) {
+    public void setVolume(int volume) {
         this.volume = volume;
     }
 
@@ -59,13 +63,13 @@ public class Televisao {
         this.ligada = ligada;
     }
 
-    public int alteraVolume(String moreless) {
-        if (moreless == "+") {
+    public int alteraVolume(int moreless) {
+        if (moreless == 1) {
             volume++;
             if (volume > 100) {
                 this.volume = 1;
             }
-        } else if (moreless == "-") {
+        } else if (moreless == 2) {
             volume--;
             if (volume < 0) {
                 this.volume = 99;
@@ -74,31 +78,22 @@ public class Televisao {
         return this.volume;
     }
 
-    public int alteraCanal(String moreless) {
-        if (moreless == "+") {
+    public int alteraCanal(int moreless) {
+        if (moreless == 1) {
             canal++;
             if (canal > 999) {
                 this.canal = 1;
             }
-        } else if (moreless == "-") {
+        } else if (moreless == 2) {
             canal--;
             if (canal < 1) {
                 this.canal = 999;
             }
         }
         return this.canal;
-        
-
-    
-
-    public boolean desligaTv() {
-        if (this.ligada = false) {
-            this.ligada = true;
-        } else {
-            this.ligada = false;
-        }
-        return this.ligada;
     }
 }
 
-}
+
+
+

@@ -20,7 +20,7 @@ public class Ex1 {
         ArrayList <Funcionario> funcionarios = new ArrayList<>();
         
         // adicionando funcionarios ao ArrayList
-        // formato das datas (NASCIMENTO, ADMISSAO,)
+        // formato das datas (NASCIMENTO, ADMISSAO)
         // Funcionario (nome, cpf, nascimento, admissao, salario)
         // adicionando funcionario e instanciando objeto
         funcionarios.add(new Funcionario("Flavio", 23487412723l, 

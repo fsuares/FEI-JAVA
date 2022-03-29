@@ -10,5 +10,7 @@
 	<classpathentry kind="src" path="LAB2/ex1/src"/>
 	<classpathentry kind="src" path="LAB2/ex2/src"/>
 	<classpathentry kind="src" path="LAB5/ex1/src/ex1"/>
+	<classpathentry kind="src" path="LAB5/EX2-Orientation/ComissionEmployee/src/comissionemployee"/>
+	<classpathentry kind="src" path="LAB5/ex3/src/ex3"/>
 	<classpathentry kind="output" path="LAB1/ex1/build/classes"/>
 </classpath>

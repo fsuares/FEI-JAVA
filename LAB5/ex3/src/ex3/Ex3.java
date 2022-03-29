@@ -109,7 +109,8 @@ public class Ex3 {
                                             contaCR.getBalance());
                             break;
                         case 3:
-                            System.out.printf("\nSaldo: R$ %.2f\n", contaCR.getBalance());
+                            System.out.printf("\nSaldo: R$ %.2f\n", 
+                                              contaCR.getBalance());
                             break;
                     } // fim do bloco de condições para o menu conta corrente
                 } // fim do loop para a conta corrente
